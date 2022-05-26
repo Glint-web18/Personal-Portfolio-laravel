@@ -56,7 +56,7 @@
 
 .heading span{
    text-transform: uppercase;
-   font-size: 6.5;
+   font-size: 6.5rem;
    border-bottom: .5rem solid;
 }
 .message{
@@ -91,10 +91,10 @@
 
 .header{
    position: fixed;
-   /* top: 0; left: -35rem; */
+   top: 0; left: -35rem;
    height: 100vh;
    background-color: #fff;
-   border-right: .5rem solid;
+   border-right: .5rem solid #000;
    width: 35rem;
    padding: 3rem 2rem;
    text-align: center;
@@ -153,9 +153,10 @@
    color:#fff;
 }
 
-.header .active{
-   left: 0;
+.header.active{
+   left: -2rem;
 }
+
 .home{
    display: flex;
    align-items:center;
@@ -165,4 +166,87 @@
 }
 .home .image{
    flex: 1 1 40rem;
+}
+
+.home .image img{
+   height: 65rem;
+   padding: 2rem;
+   border: .5rem solid #000;
+}
+
+.home .content{
+   flex: 1 1 40rem;
+}
+
+.home .content h3{
+   text-transform: uppercase;
+   font-size: 5rem;
+   margin-bottom: .5rem;
+}
+
+.home .content span{
+   display: inline-block;
+   padding: 1rem 2rem;
+   background-color: #ffcc0d;
+   font-size: 2.5rem;
+}
+.home .content p{
+   font-size: 1.8rem;
+   line-height: 2;
+   padding: 1rem 0;
+}
+
+.about .biography p{
+   margin: 2rem auto;
+   max-width: 70rem;
+   line-height: 2;
+   font-size: 1.8rem;
+}
+
+.about .biography .bio{
+   margin: 1rem 0;
+}
+
+.about .biography .bio h3,
+.about .skills .skill h3{
+   padding: 1rem 2rem;
+   display: inline-block;
+   margin: 1rem;
+   background-color: #eee;
+   border: .2rem solid #000;
+   word-break: break-all;
+   font-size: 2.5rem;
+   font-weight: normal;
+   text-transform: none;
+}
+
+.about .biography .bio h3 span{
+   font-weight: lighter;
+}
+
+.about .skills{
+   margin: 3rem 0;
+}
+
+.portfolio .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   grid-gap: 2rem;
+   align-items: flex-start;
+}
+
+.portfolio .box-container .box img{
+   height: 30rem;
+   width: 100%;
+   object-fit: cover;
+}
+
+.portfolio .box-container .box h3{
+   margin: 1rem 0;
+   font-size: 2.5rem;
+   font-weight: normal;
+}
+
+.portfolio .box-container .box span{
+   font-size: 1.8rem;
 }
